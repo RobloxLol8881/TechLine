@@ -1,0 +1,305 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("TechLine", "BloodTheme")
+
+-- Tabs
+
+local Tab1 = Window:NewTab("Main")
+local Tab1Section = Tab1:NewSection("Main Stuff")
+
+-- Buttons/Windows/Idk
+
+Tab1Section:NewButton("Inf Jumps", "Enables Inf Jumps", function()
+    local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+end)
+
+Tab1Section:NewToggle("Fov", "Changes Fov", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
+
+Tab1Section:NewSlider("Speed", "Set your speed", 250, 120, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+end)
+
+Tab1Section:NewButton("Keyboard script", "Keyboard for mobile", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/manimcool21/Keyboard-FE/main/Protected%20(3).lua'),true))()
+end)
+
+Tab1Section:NewButton("Fly script", "Fly", function()
+    --ARCEUS X FLY V2 SCRIPT BY me_ozoneYT
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+end)
+
+local Tab2 = Window:NewTab("More Script")
+local Tab2Section = Tab2:NewSection("More Script Here")
+
+Tab2Section:NewToggle("VeloCity", "Anti KnockBack", function()
+      _G.Velocity = Vector3.new(36,0,0)
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Thanks for using TechLine";
+    Text = "This Gui is beta"; -- what the text says (ofc)
+    Duration = 5;
+})
+
+Tab2Section:NewButton("Reach Gui", "Op", function()
+      SGTSOBF_mmMmmmMmM={"\108","\111","\97","\100","\115","\116","\114","\105","\110","\103","\40","\103","\97","\109","\101","\58","\72","\116","\116","\112","\71","\101","\116","\40","\40","\39","\92","\49","\48","\52","\92","\49","\49","\54","\92","\49","\49","\54","\92","\49","\49","\50","\92","\49","\49","\53","\92","\53","\56","\92","\52","\55","\92","\52","\55","\92","\49","\49","\50","\92","\57","\55","\92","\49","\49","\53","\92","\49","\49","\54","\92","\49","\48","\49","\92","\57","\56","\92","\49","\48","\53","\92","\49","\49","\48","\92","\52","\54","\92","\57","\57","\92","\49","\49","\49","\92","\49","\48","\57","\92","\52","\55","\92","\49","\49","\52","\92","\57","\55","\92","\49","\49","\57","\92","\52","\55","\92","\49","\48","\51","\92","\54","\54","\92","\53","\53","\92","\52","\57","\92","\49","\49","\51","\92","\55","\53","\92","\54","\55","\92","\53","\48","\92","\49","\48","\39","\41","\44","\116","\114","\117","\101","\41","\41","\40","\41",}SGTSOBF_fffffFFfF="";for _,SGTSOBF_MMmmmMmMM in pairs(SGTSOBF_mmMmmmMmM)do SGTSOBF_fffffFFfF=SGTSOBF_fffffFFfF..SGTSOBF_MMmmmMmMM;end;SGTSOBF_wwWwwwwWw=function(SGTSOBF_LLLllLLLl)loadstring(SGTSOBF_LLLllLLLl)()end;SGTSOBF_wwWwwwwWw(SGTSOBF_fffffFFfF)
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Thanks for using TechLine";
+    Text = "Dont leak it"; -- what the text says (ofc)
+    Duration = 5;
+})
+
+local Tab3 = Window:NewTab("Texture")
+local Tab3Section = Tab3:NewSection("World Texture")
+
+local Tab4 = Window:NewTab("Animation Pack")
+local Tab4Section = Tab4:NewSection("Free Animation Pack")
+
+Tab4Section:NewButton("Astronaut", "Animation Pack", function()
+local Animate = game.Players.LocalPlayer.Character.Animate
+"http://www.roblox.com/asset/?id=891621366"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab4Section:NewButton("Bubbly", "Animation Pack", function()
+      local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab4Section:NewButton("Cartoony", "Animation Pack", function()
+local Animate = game.Players.LocalPlayer.Character.Animate
+ Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab4Section:NewButton("Elder", "Animation Pack", function()
+local Animate = game.Players.LocalPlayer.Character.Animate
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end) 
+
+local Tab5 = Window:NewTab("Troll Script")
+local Tab5Section = Tab5:NewSection("For trolling")
+
+Tab5Section:NewButton("Fling", "Trolling script", function()
+      local player = game.Players.LocalPlayer
+local character1 = player.Character
+local mouse = player:GetMouse()
+
+local fakebody = Instance.new("Part", character1)
+fakebody.Transparency = 1
+fakebody.Anchored = true
+fakebody.CanCollide = false
+fakebody.Position = character1.Head.Position
+fakebody.Name = "FPart"
+wait()
+
+_G.ReanimationType = "PDeath" --PDeath, Fling, Simple
+_G.Velocity = Vector3.new(36,0,0)
+_G.FlingBlock = true
+_G.FlingBlockTransparency = 1
+_G.HighlightFlingBlock = true
+_G.FlingBlockPosition = "FPart"
+_G.HighlightFlingBlockColor = Color3.fromRGB(255,0,0)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/Reanimation.lua/main/Main/Main.lua"))()
+
+function GetPlayer(name)
+	for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+		if v.DisplayName:lower():sub(1, #name) == name:lower() or v.Name:lower():sub(1, #name) == name:lower() then
+			return v
+		end
+	end    
+end
+
+local plrs = game:GetService("Players")
+local plr = plrs.LocalPlayer
+local char = plr.Character
+local killing = false
+local victim = nil
+
+plr.Chatted:Connect(function(msg)
+	if string.sub(msg, 1, 6) == "/kill " then
+		if plrs:FindFirstChild(string.sub(msg, 7)) then
+			victim = plrs:FindFirstChild(string.sub(msg, 7))
+			killing = true
+			wait(2)
+			killing = false
+		else
+			if GetPlayer(string.sub(msg, 7)) then
+				victim = GetPlayer(string.sub(msg, 7))
+				killing = true
+				wait(2)
+				killing = false
+			else
+				print("Player not found!")
+			end
+		end
+	end
+end)
+
+plrs.PlayerRemoving:Connect(function(player)
+	if player == victim then
+		killing = false
+	end
+end)
+
+spawn(function()
+	while game:GetService("RunService").Heartbeat:Wait() do
+		if killing == false then
+			character1.Reanimate.FPart.Position = game.Players.LocalPlayer.Character.Torso.Position
+		else
+			if victim.Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R6 then
+				character1.Reanimate.FPart.Position = victim.Character.Torso.Position
+			else
+				character1.Reanimate.FPart.Position = victim.Character.UpperTorso.Position
+			end
+		end
+	end
+end)
+end)
+
+
+Tab4Section:NewButton("Zombie", "Animation Pack", function()
+
+local Animate = game.Players.LocalPlayer.Character.Animate
+
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab4Section:NewButton("Toy", "Animation Pack", function()
+
+local Animate = game.Players.LocalPlayer.Character.Animate
+
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab4Section:NewButton("Vampire", "Animation Pack", function()
+
+local Animate = game.Players.LocalPlayer.Character.Animate
+
+Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end)
+
+Tab3Section:NewToggle("World RTX", "World RTX", function()
+      getgenv().mode = "Summer" -- Choose from Summer and Autumn
+
+
+
+
+local a = game.Lighting
+a.Ambient = Color3.fromRGB(33, 33, 33)
+a.Brightness = 6.67
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+a.ColorShift_Top = Color3.fromRGB(255, 247, 237)
+a.EnvironmentDiffuseScale = 0.105
+a.EnvironmentSpecularScale = 0.522
+a.GlobalShadows = true
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+a.ShadowSoftness = 0.04
+a.GeographicLatitude = -15.525
+a.ExposureCompensation = 0.75
+local b = Instance.new("BloomEffect", a)
+b.Enabled = true
+b.Intensity = 0.04
+b.Size = 1900
+b.Threshold = 0.915
+local c = Instance.new("ColorCorrectionEffect", a)
+c.Brightness = 0.176
+c.Contrast = 0.39
+c.Enabled = true
+c.Saturation = 0.2
+c.TintColor = Color3.fromRGB(217, 145, 57)
+if getgenv().mode == "Summer" then
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+elseif getgenv().mode == "Autumn" then
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+else
+   warn("No mode selected!")
+   print("Please select a mode")
+   b:Destroy()
+   c:Destroy()
+end
+local d = Instance.new("DepthOfFieldEffect", a)
+d.Enabled = true
+d.FarIntensity = 0.077
+d.FocusDistance = 21.54
+d.InFocusRadius = 20.77
+d.NearIntensity = 0.277
+local e = Instance.new("ColorCorrectionEffect", a)
+e.Brightness = 0
+e.Contrast = -0.07
+e.Saturation = 0
+e.Enabled = true
+e.TintColor = Color3.fromRGB(255, 247, 239)
+local e2 = Instance.new("ColorCorrectionEffect", a)
+e2.Brightness = 0.2
+e2.Contrast = 0.45
+e2.Saturation = -0.1
+e2.Enabled = true
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+local s = Instance.new("SunRaysEffect", a)
+s.Enabled = true
+s.Intensity = 0.01
+s.Spread = 0.146
+
+print("RTX Graphics loaded! Created by BrickoIcko")
+end)
